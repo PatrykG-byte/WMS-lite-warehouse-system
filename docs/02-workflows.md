@@ -747,6 +747,6 @@ It demonstrates a practical warehouse operations system built around process con
 <div align="center">
 
 **WMS-lite – Warehouse Operations System**  
-Functional monolithic prototype focused on warehouse process control, auditability and operational problem solving.
+A practical warehouse operations system focused on process control, stock traceability, exception handling and audit history.
 
 </div>
