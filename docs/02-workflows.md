@@ -96,9 +96,9 @@ Received stock is not immediately released into active stock.
 Instead, it is saved as pending stock:
 
 ```text
-PENDING_P
-PENDING_DA
-PENDING_EX
+PENDING_P  = pending normal stock
+PENDING_DA = pending damaged stock
+PENDING_EX = pending extra stock
 ```
 
 This creates a safety buffer between physical receiving and available warehouse stock.
