@@ -14,7 +14,7 @@ This document describes the main warehouse workflows supported by **WMS-lite –
 
 The system is designed around real warehouse operations, not only around inventory visibility. It supports the flow of stock from inbound receiving, through stock control, picking, packing, outbound preparation, problem solving and audit history.
 
-The current implementation is a **functional but monolithic prototype**. Most business logic, database operations and Streamlit UI are handled inside `app.py`. This is a known limitation of the portfolio version, but it also shows the full operational scope of the system in one working application.
+The current implementation is a functional . Most business logic, database operations and Streamlit UI are handled inside `app.py`. This is a known limitation of the portfolio version, but it also shows the full operational scope of the system in one working application.
 
 The goal of this project is to demonstrate practical warehouse process control:
 
