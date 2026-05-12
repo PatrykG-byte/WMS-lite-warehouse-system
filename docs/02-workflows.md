@@ -286,12 +286,12 @@ EX
 The system does not pick from:
 
 ```text
-PENDING_*
-DA
-PICKED
-PACKED
-MISSING
-USUNIĘTY
+PENDING_* = any pending stock record waiting for final release or classification
+DA        = damaged stock, separated from normal picking
+PICKED    = stock already moved into the picking area
+PACKED    = stock already packed into an outbound shipment structure
+MISSING   = stock expected in a source location but not physically found
+REMOVED  = removed / zeroed stock record kept only for traceability
 ```
 
 This prevents operators from picking stock that is not operationally available.
@@ -627,7 +627,7 @@ This workflow is used when the stock record itself is wrong or when a warehouse 
 When a record should no longer count as active stock, it can be marked as:
 
 ```text
-USUNIĘTY
+REMOVED
 ```
 
 and its quantity is zeroed.
