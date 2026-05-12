@@ -131,16 +131,16 @@ The GAP workflow can identify:
 
 ```text
 OK
-BRAK
-NADWYŻKA
-ILOŚĆ OK / DAMAGE
-EXTRA SPOZA LISTY
+SHORTAGE
+OVERAGE
+QTY OK / DAMAGE
+EXTRA OUTSIDE LIST
 ```
 
 Items received outside the delivery plan are separated as:
 
 ```text
-EXTRA SPOZA LISTY
+EXTRA OUTSIDE LIST
 ```
 
 This is important because extra products should not silently modify the original plan.
