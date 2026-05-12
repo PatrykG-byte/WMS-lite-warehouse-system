@@ -188,24 +188,29 @@ Dedicated scanner UI
 
 ---
 
-## 6. No Real-Time Multi-Station Sync Layer
+## 6. Real-Time Synchronization and Multi-Station Behavior
 
-The current application uses database state and Streamlit reruns to reflect changes.
+The system already supports multi-station operational work through shared SQLite state, controlled refreshes, session persistence and view preservation mechanisms.
 
-It does not include a dedicated real-time synchronization layer.
+Operational changes such as receiving, picking, packing and corrections are written to the database and then reflected in the application through controlled refresh and rerun logic.
 
-This means that if many stations work at the same time, the system depends on database refreshes and UI reruns.
+The current version is suitable for local warehouse use where multiple users work against the same database file or local deployment.
+
+However, the system does not yet use a dedicated websocket or event-driven push layer.
+
+That means updates are synchronized through database reads, cache invalidation and application refresh logic, rather than instant push notifications between all connected stations.
 
 Future improvements could include:
 
-- live refresh for selected views,
-- websocket-based updates,
+- live update indicators,
+- websocket-based event push,
 - station activity monitor,
-- lock indicators for records being edited,
-- better conflict prevention for simultaneous operations.
+- record lock indicators,
+- conflict warnings for simultaneous edits,
+- real-time supervisor dashboard,
+- background event queue.
 
-This would be especially useful in picking, packing and correction workflows.
-
+This would improve visibility in high-concurrency environments, but the current system already contains practical synchronization mechanisms for local operational workflows.
 ---
 
 ## 7. Limited Barcode Scanner Optimization
