@@ -196,14 +196,14 @@ DA
 The following statuses are not treated as active available stock:
 
 ```text
-PENDING
-PENDING_P
-PENDING_DA
-PENDING_EX
-MISSING
-PICKED
-PACKED
-USUNIĘTY
+PENDING    = received or created record waiting for final classification
+PENDING_P  = received stock waiting for release as normal stock
+PENDING_DA = received stock waiting for release as damaged stock
+PENDING_EX = received stock waiting for release as extra stock
+MISSING    = stock expected in a source location but not physically found
+PICKED     = stock already moved from warehouse stock into picking area
+PACKED     = stock already packed into outbound shipment structure
+REMOVERD   = removed / zeroed stock record kept for traceability
 ```
 
 This means the current stock view shows stock that is still physically available for warehouse operations.
