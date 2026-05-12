@@ -77,7 +77,7 @@ The delivery plan defines what should arrive in the warehouse:
 - expected quantity,
 - supplier pallet reference,
 - supplier box reference,
-- destination / country configuration,
+- source country / inbound country configuration,,
 - pallet prefix,
 - box prefix.
 
